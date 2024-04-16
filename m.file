@@ -1,0 +1,15 @@
+% Define filter parameters
+fpass = 70e6; % Passband frequency (Hz)
+fstop = 80e6; % Stopband frequency (Hz)
+apass = 0.5; % Passband ripple (dB)
+astop = 60; % Stopband attenuation (dB)
+
+% Design the filter
+d = designfilt('lowpassfir', 'PassbandFrequency', fpass, 'StopbandFrequency', fstop, ...
+               'PassbandRipple', apass, 'StopbandAttenuation', astop, 'SampleRate', 200e6);
+
+% Visualize the filter
+fvtool(d)
+
+% Optionally, you can apply the filter to a signal
+% filtered_signal = filter(d, your_signal);
