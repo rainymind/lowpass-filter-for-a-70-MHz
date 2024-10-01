@@ -1,4 +1,5 @@
-% Define filter parameters.020000000
+% .020000000
+% Define filter parameters
 fpass = 70e6; % Passband frequency (Hz)
 fstop = 80e6; % Stopband frequency (Hz)
 apass = 0.5; % Passband ripple (dB)
