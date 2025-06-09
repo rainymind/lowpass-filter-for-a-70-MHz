@@ -1,4 +1,4 @@
-% 012
+% 0123
 % Define filter parameters
 fpass = 70e6; % Passband frequency (Hz)
 fstop = 80e6; % Stopband frequency (Hz)
